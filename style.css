@@ -165,16 +165,15 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: transparent;
-    border-bottom: none;
+    background: rgba(219, 234, 254, 0.92);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.08);
     transition: all var(--transition);
 }
 
 .navbar.scrolled {
-    background: rgba(219, 234, 254, 0.75);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border-bottom: none;
+    background: rgba(219, 234, 254, 0.95);
 }
 
 
