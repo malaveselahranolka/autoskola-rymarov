@@ -183,14 +183,26 @@ img {
     align-items: center;
     justify-content: space-between;
     height: 72px;
+    line-height: 1;
+}
+
+.nav-toggle,
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
 }
 
 .nav-logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
     color: var(--dark);
+    line-height: 1;
+}
+
+.logo-icon {
+    display: block;
 }
 
 .logo-icon {
@@ -199,6 +211,9 @@ img {
 }
 
 .logo-text {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
     font-weight: 800;
     font-size: 1.05rem;
     letter-spacing: 0.02em;
@@ -996,6 +1011,26 @@ img {
     padding: 24px 0;
     text-align: center;
     font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-credit {
+    font-size: 0.78rem;
+    color: var(--gray-400);
+}
+
+.footer-credit a {
+    color: var(--gray-400);
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.footer-credit a:hover {
+    color: var(--white);
 }
 
 /* ===== Animations ===== */
