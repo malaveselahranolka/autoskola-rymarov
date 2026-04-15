@@ -69,6 +69,21 @@ contactForm.addEventListener('submit', (e) => {
     window.location.href = mailto;
 });
 
+// Video sound toggle
+const videoSoundToggle = document.getElementById('videoSoundToggle');
+if (videoSoundToggle) {
+    const video = document.querySelector('.promo-video');
+    const iconMute = videoSoundToggle.querySelector('.icon-mute');
+    const iconUnmute = videoSoundToggle.querySelector('.icon-unmute');
+
+    videoSoundToggle.addEventListener('click', () => {
+        video.muted = !video.muted;
+        iconMute.style.display = video.muted ? '' : 'none';
+        iconUnmute.style.display = video.muted ? 'none' : '';
+        videoSoundToggle.setAttribute('aria-label', video.muted ? 'Zapnout zvuk' : 'Vypnout zvuk');
+    });
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

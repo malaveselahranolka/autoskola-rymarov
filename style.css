@@ -381,6 +381,62 @@ img {
     background: var(--gray-200);
 }
 
+/* ===== Video Section ===== */
+.video-section {
+    padding: 80px 0 40px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    background: var(--dark);
+}
+
+.promo-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-sound-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+}
+
+.video-sound-toggle:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+}
+
+.video-caption {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.video-caption h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-top: 8px;
+}
+
 /* ===== Section Common ===== */
 .section {
     padding: 100px 0;
