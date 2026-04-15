@@ -403,6 +403,30 @@ img {
     display: block;
 }
 
+.video-play-btn {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(37, 99, 235, 0.9);
+    backdrop-filter: blur(10px);
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.video-play-btn:hover {
+    transform: scale(1.1);
+    background: var(--primary-dark);
+}
+
 .video-sound-toggle {
     position: absolute;
     bottom: 20px;

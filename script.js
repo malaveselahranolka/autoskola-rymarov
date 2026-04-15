@@ -69,6 +69,22 @@ contactForm.addEventListener('submit', (e) => {
     window.location.href = mailto;
 });
 
+// Video autoplay fallback for strict mobile browsers
+const promoVideo = document.getElementById('promoVideo');
+const videoPlayBtn = document.getElementById('videoPlayBtn');
+if (promoVideo && videoPlayBtn) {
+    promoVideo.play().catch(() => {
+        videoPlayBtn.style.display = 'flex';
+    });
+    videoPlayBtn.addEventListener('click', () => {
+        promoVideo.play();
+        videoPlayBtn.style.display = 'none';
+    });
+    promoVideo.addEventListener('playing', () => {
+        videoPlayBtn.style.display = 'none';
+    });
+}
+
 // Video sound toggle
 const videoSoundToggle = document.getElementById('videoSoundToggle');
 if (videoSoundToggle) {
