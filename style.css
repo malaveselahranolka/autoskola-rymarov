@@ -37,7 +37,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--gray-700);
     line-height: 1.6;
-    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #faf5ff 60%, #fff7ed 100%);
+    background: linear-gradient(165deg, #dbeafe 0%, #e0e7ff 25%, #ede9fe 55%, #fce7f3 85%, #fed7aa 100%);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -171,7 +171,7 @@ img {
 }
 
 .navbar.scrolled {
-    background: linear-gradient(to bottom, rgba(239, 246, 255, 0.85) 60%, rgba(239, 246, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(219, 234, 254, 0.75) 60%, rgba(239, 246, 255, 0) 100%);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border-bottom: none;
@@ -268,7 +268,7 @@ img {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #faf5ff 60%, #fff7ed 100%);
+    background: linear-gradient(165deg, #dbeafe 0%, #e0e7ff 25%, #ede9fe 55%, #fce7f3 85%, #fed7aa 100%);
     z-index: -2;
 }
 
@@ -975,14 +975,14 @@ img {
 
     /* When mobile menu open, match navbar background */
     .navbar.menu-open {
-        background: rgba(239, 246, 255, 0.85);
+        background: rgba(219, 234, 254, 0.75);
         backdrop-filter: blur(20px) saturate(180%);
         -webkit-backdrop-filter: blur(20px) saturate(180%);
         border-bottom: none;
     }
 
     .nav-links {
-        background: rgba(239, 246, 255, 0.85);
+        background: rgba(219, 234, 254, 0.75);
         backdrop-filter: blur(20px) saturate(180%);
         -webkit-backdrop-filter: blur(20px) saturate(180%);
     }
