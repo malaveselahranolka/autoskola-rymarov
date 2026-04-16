@@ -167,7 +167,6 @@ img {
     right: 0;
     z-index: 1000;
     background: #dbeafe;
-    border-bottom: 1px solid rgba(37, 99, 235, 0.08);
     padding-top: env(safe-area-inset-top);
     transition: box-shadow var(--transition);
 }
