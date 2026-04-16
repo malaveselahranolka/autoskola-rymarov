@@ -672,6 +672,11 @@ img {
     gap: 24px;
 }
 
+.instructors-grid-single {
+    grid-template-columns: minmax(260px, 380px);
+    justify-content: center;
+}
+
 .instructor-card {
     text-align: center;
     padding: 40px 28px;
