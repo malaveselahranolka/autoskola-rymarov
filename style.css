@@ -166,17 +166,14 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(219, 234, 254, 0.85);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: none;
+    background: #dbeafe;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.08);
     padding-top: env(safe-area-inset-top);
-    transition: all var(--transition);
+    transition: box-shadow var(--transition);
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.55);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 20px rgba(37, 99, 235, 0.08);
 }
 
 
