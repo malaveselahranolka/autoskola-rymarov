@@ -742,6 +742,15 @@ img {
     text-align: center;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-card > .btn {
+    display: inline-flex;
+    width: auto;
+    margin: 0 auto;
 }
 
 .pricing-card h3 {
