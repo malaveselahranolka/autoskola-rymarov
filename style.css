@@ -1087,44 +1087,36 @@ img {
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 2;
     }
 
     .nav-container {
-        justify-content: center;
+        justify-content: flex-start;
+        padding-right: 56px; /* room for hamburger */
     }
 
     .nav-logo {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .nav-links {
         position: fixed;
-        top: 72px;
+        top: calc(72px + env(safe-area-inset-top));
         left: 0;
         right: 0;
         flex-direction: column;
         padding: 24px;
-        border-bottom: 1px solid rgba(0,0,0,0.06);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-        transform: translateY(-120%);
-        transition: transform var(--transition);
-    }
-
-    /* When mobile menu open, match navbar background */
-    .navbar.menu-open {
-        background: rgba(219, 234, 254, 0.75);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border-bottom: none;
-    }
-
-    .nav-links {
-        background: rgba(219, 234, 254, 0.75);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        background: #dbeafe;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
     }
 
     .nav-links.active {
+        opacity: 1;
+        visibility: visible;
         transform: translateY(0);
     }
 
