@@ -1133,7 +1133,7 @@ img {
         flex-direction: column;
         padding: 24px;
         box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
-        background: rgba(219, 234, 254, 0.7);
+        background: rgba(219, 234, 254, 0.95);
         backdrop-filter: blur(18px) saturate(180%);
         -webkit-backdrop-filter: blur(18px) saturate(180%);
         opacity: 0;
