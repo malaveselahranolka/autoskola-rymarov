@@ -166,10 +166,11 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(219, 234, 254, 0.6);
+    background: rgba(219, 234, 254, 0.85);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-bottom: none;
+    padding-top: env(safe-area-inset-top);
     transition: all var(--transition);
 }
 
@@ -185,6 +186,7 @@ img {
     justify-content: space-between;
     height: 72px;
     line-height: 1;
+    position: relative;
 }
 
 .nav-toggle,
@@ -1076,6 +1078,18 @@ img {
 @media (max-width: 768px) {
     .nav-toggle {
         display: flex;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    .nav-logo {
+        margin: 0 auto;
     }
 
     .nav-links {
