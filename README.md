@@ -4,21 +4,20 @@ Moderní responzivní webová prezentace autoškoly Rýmařov. Redesign původn�
 
 ## Funkce
 
-- Plně responzivní design (mobil, tablet, desktop)
-- Moderní UI s gradient pozadím a blur efekty
-- Průhledný navbar s mobilním menu
-- Sekce: O nás, Služby, Instruktoři, Ceník, Aktuality, Kontakt
-- Kontaktní formulář (mailto)
-- Google Maps integrace
-- Custom scrollbar
-- Scroll animace
+- Responzivní one-page web (mobil první), spodní lišta pro rychlé zavolání na mobilu
+- Hero s videem výukového vozu (jen desktop, jinak poster kvůli datům)
+- Automaticky spočítaný termín příští výuky teorie (lichý týden, čtvrtek 15:30)
+- Sekce: O nás, Proč u nás, Kurzy, Jak to probíhá, Instruktor, Ceník, Kontakt
+- Kontaktní formulář s validací (odesílá přes `mailto:`), předvyplnění kurzu z karet
+- Přístupnost: skip link, landmarky, focus stavy, `prefers-reduced-motion`
+- Design pravidla v `DESIGN.md`, produktová fakta v `PRODUCT.md`
 
 ## Technologie
 
 - HTML5
 - CSS3 (custom properties, grid, flexbox)
 - Vanilla JavaScript (žádné frameworky)
-- Google Fonts (Inter)
+- Google Fonts (Archivo, Onest)
 
 ## Spuštění
 
