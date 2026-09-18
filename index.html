@@ -1,439 +1,660 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Autoškola Ladislav Mikuš – Rýmařov | Řidičské oprávnění skupiny B a více</title>
-    <meta name="description" content="Autoškola Ladislav Mikuš v Rýmařově – výuka řízení skupiny B a školení profesní způsobilosti řidičů. Žižkova 21, Rýmařov.">
-    <meta name="theme-color" content="#dbeafe">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoškola Ladislav Mikuš – Rýmařov | Řidičský průkaz skupiny B</title>
+  <meta name="description" content="Autoškola Ladislav Mikuš v Rýmařově. Celý výcvik s jedním instruktorem – od první hodiny teorie až po zkoušku. Skupina B, profesní způsobilost a kondiční jízdy.">
+  <meta name="theme-color" content="#f2f3f7">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Autoškola Ladislav Mikuš – Rýmařov">
+  <meta property="og:description" content="Řidičák skupiny B, školení profesní způsobilosti a kondiční jízdy. Celý výcvik s jedním instruktorem v Rýmařově a okolí.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="poster.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232342c2'/%3E%3Cpath d='M9 24 16 7l7 17M11.8 18h8.4' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Onest:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Onest:wght@400;500;600&display=swap"></noscript>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="nav-logo">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v7"/><path d="M12 15v7"/><path d="M2 12h7"/><path d="M15 12h7"/></svg>
-                <span class="logo-text">AUTOŠKOLA <small>LADISLAV MIKUŠ</small></span>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Přeskočit na obsah</a>
+
+  <!-- 1. Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__container">
+      <a href="#uvod" class="site-logo">
+        <span class="site-logo__plate">AUTOŠKOLA</span>
+        <span class="site-logo__text">
+          <span class="site-logo__name">Ladislav Mikuš</span>
+          <span class="site-logo__city">Rýmařov</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Hlavní navigace">
+        <ul class="site-nav__list">
+          <li><a href="#kurzy" class="site-nav__link">Kurzy</a></li>
+          <li><a href="#postup" class="site-nav__link">Jak to probíhá</a></li>
+          <li><a href="#instruktor" class="site-nav__link">Instruktor</a></li>
+          <li><a href="#cenik" class="site-nav__link">Ceník</a></li>
+          <li><a href="#kontakt" class="site-nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="tel:+420604305733" class="btn btn--primary site-header__cta">
+          <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>604 305 733</span>
+        </a>
+
+        <a href="tel:+420604305733" class="site-header__mobile-call" aria-label="Zavolat 604 305 733">
+          <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </a>
+
+        <button type="button" class="site-header__menu-btn" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="siteNav">
+          <span class="menu-icon" aria-hidden="true">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 2. Hero Section -->
+    <section id="uvod" class="hero">
+      <div class="hero__panel">
+        <div class="hero__media">
+          <img class="hero__poster" src="poster.jpg" alt="" fetchpriority="high" width="1920" height="1080">
+          <video id="heroVideo" class="hero__video" muted loop playsinline preload="none" poster="poster.jpg">
+            <source src="promo.mp4" type="video/mp4">
+          </video>
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <button type="button" class="hero__video-toggle" id="heroVideoToggle" aria-label="Pozastavit video" style="display: none;">
+            <svg class="icon icon-pause" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="4" width="4" height="16" rx="1"/>
+              <rect x="14" y="4" width="4" height="16" rx="1"/>
+            </svg>
+            <svg class="icon icon-play" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+              <polygon points="6 4 20 12 6 20 6 4"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">Naučte se řídit v&nbsp;Rýmařově</h1>
+          <p class="hero__lead">Řidičák skupiny B, školení profesní způsobilosti a&nbsp;kondiční jízdy. Celý výcvik s&nbsp;jedním instruktorem – od první hodiny teorie až po zkoušku.</p>
+          <div class="hero__actions">
+            <a href="tel:+420604305733" class="btn btn--primary btn--lg">
+              <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Zavolat 604 305 733</span>
             </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">O nás</a></li>
-                <li><a href="#services">Služby</a></li>
-                <li><a href="#instructors">Instruktoři</a></li>
-                <li><a href="#pricing">Ceník</a></li>
-                <li><a href="#news">Aktuality</a></li>
-                <li><a href="#contact" class="btn btn-nav">Kontakt</a></li>
+            <a href="#kontakt" class="btn btn--ghost-light btn--lg">Poslat přihlášku</a>
+          </div>
+          <div class="hero__meta">
+            <svg class="icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Areál ČSAD, Žižkova 620/21, Rýmařov</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="next-lesson">
+        <div class="next-lesson__label">Příští výuka teorie</div>
+        <div class="next-lesson__value">
+          <time id="nextTheoryTime" datetime="2026-09-24T15:30">každý lichý čtvrtek od 15:30</time>
+        </div>
+        <div class="next-lesson__note">Každý lichý čtvrtek v&nbsp;učebně ČSAD, nebo dle domluvy.</div>
+      </div>
+    </section>
+
+    <!-- 3. Statement Section -->
+    <section id="o-nas" class="statement">
+      <div class="container">
+        <h2 class="sr-only">O&nbsp;nás</h2>
+        <p class="statement__paragraph" id="statementParagraph">Jsme malá autoškola z&nbsp;Rýmařova. Teorií, jízdami i&nbsp;přípravou na zkoušku vás provede jeden instruktor, takže nezačínáte u&nbsp;každé hodiny s&nbsp;někým novým. Učíme v&nbsp;areálu ČSAD na Žižkově ulici a&nbsp;jezdíme po Rýmařově a&nbsp;okolí.</p>
+      </div>
+    </section>
+
+    <!-- 4. Proč se učit u nás Section -->
+    <section id="proc" class="section proc">
+      <div class="container">
+        <div class="section-header proc__header">
+          <div class="proc__header-title">
+            <h2 class="section-title">Proč se učit u&nbsp;nás</h2>
+          </div>
+          <a href="tel:+420604305733" class="btn btn--secondary proc__call-btn">
+            <svg class="icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Zeptat se po telefonu</span>
+          </a>
+        </div>
+
+        <div class="proc__grid">
+          <!-- 1. Photo tile -->
+          <div class="tile tile--photo">
+            <img class="tile__photo-img" src="poster.jpg" alt="" loading="lazy" width="1920" height="1080">
+            <div class="tile__photo-overlay" aria-hidden="true"></div>
+            <div class="tile__photo-content">
+              <h3 class="tile__title tile__title--light">Jeden instruktor od začátku do konce</h3>
+              <p class="tile__text tile__text--light">Ladislav Mikuš vede teorii i&nbsp;jízdy. Zná vaše slabší místa a&nbsp;ví, na čem pracovat.</p>
+            </div>
+          </div>
+
+          <!-- 2. Učebna ČSAD -->
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                <path d="M9 22v-4h6v4"/>
+                <path d="M8 6h.01"/>
+                <path d="M16 6h.01"/>
+                <path d="M8 10h.01"/>
+                <path d="M16 10h.01"/>
+                <path d="M8 14h.01"/>
+                <path d="M16 14h.01"/>
+              </svg>
+            </div>
+            <h3 class="tile__title">Učebna v&nbsp;areálu ČSAD</h3>
+            <p class="tile__text">Žižkova 620/21, Rýmařov. Teorie každý lichý čtvrtek od 15:30.</p>
+          </div>
+
+          <!-- 3. Dvě výuková auta -->
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                <circle cx="7" cy="17" r="2"/>
+                <circle cx="17" cy="17" r="2"/>
+              </svg>
+            </div>
+            <h3 class="tile__title">Dvě výuková auta</h3>
+            <p class="tile__text">Škoda Fabia Combi 1.9D a&nbsp;Fiat Stilo 1.4 LPG.</p>
+          </div>
+
+          <!-- 4. Zdravotní příprava -->
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="3" width="6" height="18" rx="1"/>
+                <rect x="3" y="9" width="18" height="6" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="tile__title">Zdravotní příprava</h3>
+            <p class="tile__text">První pomoc s&nbsp;kvalifikovaným lektorem Bc. Jindřichem Ptáčníkem.</p>
+          </div>
+
+          <!-- 5. Splátky i dárkové poukazy (Blue filled tile) -->
+          <div class="tile tile--blue">
+            <div class="tile__icon tile__icon--yellow" aria-hidden="true">
+              <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="8" width="18" height="4" rx="1"/>
+                <path d="M12 8v13"/>
+                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/>
+                <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>
+              </svg>
+            </div>
+            <h3 class="tile__title tile__title--light">Splátky i&nbsp;dárkové poukazy</h3>
+            <p class="tile__text tile__text--light">Kurz můžete rozložit do splátek, nebo ho darovat.</p>
+          </div>
+
+          <!-- 6. Materiály v ceně (Horizontal strip) -->
+          <div class="tile tile--wide">
+            <div class="tile__icon" aria-hidden="true">
+              <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                <path d="M6 6h10"/>
+                <path d="M6 10h10"/>
+              </svg>
+            </div>
+            <div class="tile__wide-content">
+              <h3 class="tile__title">Materiály v&nbsp;ceně</h3>
+              <p class="tile__text">Výukové CD zdarma a&nbsp;učebnice za zvýhodněné ceny.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Kurzy Section -->
+    <section id="kurzy" class="section kurzy">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kurzy</h2>
+          <p class="section-lead">Vyberte si, co potřebujete. Podrobnosti a&nbsp;termíny domluvíme po telefonu.</p>
+        </div>
+
+        <div class="kurzy__grid">
+          <!-- Card B (featured) -->
+          <article class="course course--featured">
+            <div class="course__media">
+              <img class="course__img" src="poster.jpg" alt="" loading="lazy" width="1920" height="1080">
+            </div>
+            <div class="course__content">
+              <div class="course__badge-wrap">
+                <span class="badge">Nejčastější</span>
+              </div>
+              <h3 class="course__title">Řidičský průkaz skupiny B</h3>
+              <p class="course__text">Osobní auto do 3,5 t. Teorie, zdravotní příprava i&nbsp;praktické jízdy.</p>
+              <ul class="checklist course__list">
+                <li class="checklist__item">
+                  <span class="checklist__icon" aria-hidden="true">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Teoretická výuka v&nbsp;učebně</span>
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__icon" aria-hidden="true">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Praktické jízdy na Fabii nebo Stilu</span>
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__icon" aria-hidden="true">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Zdravotní příprava (první pomoc)</span>
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__icon" aria-hidden="true">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Výukové materiály v&nbsp;ceně</span>
+                </li>
+                <li class="checklist__item">
+                  <span class="checklist__icon" aria-hidden="true">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span>Možnost splátek</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn--blue course__btn" data-course="B">Mám zájem</button>
+            </div>
+          </article>
+
+          <!-- Card Školení profesní způsobilosti řidičů -->
+          <article class="course">
+            <h3 class="course__title">Školení profesní způsobilosti řidičů</h3>
+            <p class="course__text">Akreditované školicí středisko s&nbsp;působností v&nbsp;Bruntále a&nbsp;okolí. Vstupní i&nbsp;pravidelná školení.</p>
+            <button type="button" class="btn btn--secondary course__btn" data-course="prof">Mám zájem</button>
+          </article>
+
+          <!-- Card Kondiční jízdy -->
+          <article class="course">
+            <h3 class="course__title">Kondiční jízdy</h3>
+            <p class="course__text">Máte řidičák, ale dlouho jste neřídili? Jízdy s&nbsp;instruktorem vám vrátí jistotu.</p>
+            <button type="button" class="btn btn--secondary course__btn" data-course="kondic">Mám zájem</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Postup Section -->
+    <section id="postup" class="section postup">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Jak to probíhá</h2>
+        </div>
+
+        <ol class="postup__list">
+          <li class="step">
+            <div class="step__num" aria-hidden="true">1</div>
+            <div class="step__content">
+              <h3 class="step__title">Přihláška</h3>
+              <p class="step__text">Zavoláte nebo napíšete a&nbsp;domluvíme začátek kurzu.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">2</div>
+            <div class="step__content">
+              <h3 class="step__title">Teorie</h3>
+              <p class="step__text">Pravidla silničního provozu, zásady bezpečné jízdy, ovládání a&nbsp;údržba vozidla.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Zdravotní příprava</h3>
+              <p class="step__text">Základy první pomoci s&nbsp;lektorem.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">4</div>
+            <div class="step__content">
+              <h3 class="step__title">Jízdy</h3>
+              <p class="step__text">Praktický výcvik v&nbsp;provozu, individuálně, jeden žák v&nbsp;autě.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num" aria-hidden="true">5</div>
+            <div class="step__content">
+              <h3 class="step__title">Zkouška</h3>
+              <p class="step__text">Závěrečná zkouška z&nbsp;testu a&nbsp;z&nbsp;jízdy. Pak už jen převzít řidičák.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. Instruktor Section -->
+    <section id="instruktor" class="section instruktor">
+      <div class="container">
+        <div class="instruktor__grid">
+          <div class="instruktor__video-col">
+            <div class="instruktor__video-wrap">
+              <video controls preload="none" poster="poster.jpg" playsinline class="instruktor__video">
+                <source src="promo.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje přehrávání videa.
+              </video>
+            </div>
+            <p class="instruktor__video-caption">Podívejte se, jak to u&nbsp;nás vypadá.</p>
+          </div>
+
+          <div class="instruktor__info-col">
+            <h2 class="section-title instruktor__title">Ladislav Mikuš</h2>
+            <div class="instruktor__role">Vedoucí instruktor – teorie i&nbsp;praxe</div>
+            <p class="instruktor__text">Majitel autoškoly a&nbsp;instruktor v&nbsp;jedné osobě. Vede výuku skupiny B i&nbsp;školení profesní způsobilosti řidičů.</p>
+            <div class="instruktor__tags">
+              <span class="tag">Skupina B</span>
+              <span class="tag">Profesní způsobilost</span>
+            </div>
+            <a href="tel:+420604305733" class="btn btn--primary instruktor__call-btn">
+              <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Zavolat instruktorovi</span>
+            </a>
+            <div class="instruktor__divider"></div>
+            <p class="instruktor__subline">Zdravotní příprava: Bc. Jindřich Ptáčník</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Ceník Section -->
+    <section id="cenik" class="section cenik">
+      <div class="container">
+        <div class="cenik__panel">
+          <div class="cenik__content">
+            <h2 class="cenik__title">Kolik stojí kurz?</h2>
+            <p class="cenik__text">Cena záleží na typu kurzu a&nbsp;rozsahu výcviku. Zavolejte a&nbsp;řekneme vám ji hned – včetně možnosti splátek.</p>
+            <ul class="cenik__checklist">
+              <li class="cenik__item">
+                <span class="cenik__check" aria-hidden="true">
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Splátkový kalendář</span>
+              </li>
+              <li class="cenik__item">
+                <span class="cenik__check" aria-hidden="true">
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Výukové materiály v&nbsp;ceně</span>
+              </li>
+              <li class="cenik__item">
+                <span class="cenik__check" aria-hidden="true">
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Výukové CD zdarma</span>
+              </li>
+              <li class="cenik__item">
+                <span class="cenik__check" aria-hidden="true">
+                  <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Dárkové poukazy</span>
+              </li>
             </ul>
-        </div>
-    </nav>
+          </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero-content">
-            <div class="hero-badge">Akreditované školicí středisko</div>
-            <h1>Vaše cesta k řidičskému<br>průkazu začíná <span class="text-gradient">zde</span></h1>
-            <p class="hero-subtitle">Profesionální výuka řízení v Rýmařově a okolí. Individuální přístup, zkušení instruktoři a moderní výuková vozidla.</p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary btn-lg">Zapsat se do kurzu</a>
-                <a href="#services" class="btn btn-outline btn-lg">Naše služby</a>
+          <div class="cenik__action">
+            <a href="tel:+420604305733" class="btn btn--primary btn--lg cenik__btn">
+              <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Zavolat 604 305 733</span>
+            </a>
+            <div class="cenik__subtext">
+              nebo napište na <a href="mailto:autoskolarymarov@gmail.com" class="cenik__link">autoskolarymarov@gmail.com</a>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">B</span>
-                    <span class="stat-label">Skupina</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">1:1</span>
-                    <span class="stat-label">Individuální přístup</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">★★★</span>
-                    <span class="stat-label">Kvalitní výuka</span>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Promo Video Section -->
-    <section class="video-section">
-        <div class="container">
-            <div class="video-wrapper">
-                <video
-                    id="promoVideo"
-                    class="promo-video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    webkit-playsinline
-                    preload="metadata"
-                    poster="poster.jpg">
-                    <source src="promo.mp4" type="video/mp4">
-                    Vaše prohlížeč nepodporuje přehrávání videa.
-                </video>
-                <button class="video-play-btn" id="videoPlayBtn" aria-label="Přehrát video" style="display:none">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                </button>
-                <button class="video-sound-toggle" id="videoSoundToggle" aria-label="Zapnout zvuk">
-                    <svg class="icon-mute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
-                    <svg class="icon-unmute" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-                </button>
-            </div>
-            <div class="video-caption">
-                <span class="section-tag">Propagační video</span>
-                <h2>Podívejte se, jak to u nás chodí</h2>
-            </div>
+    <!-- 9. Kontakt Section -->
+    <section id="kontakt" class="section kontakt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kontakt</h2>
+          <p class="section-lead">Zavolejte, napište, nebo se zastavte v&nbsp;učebně.</p>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">O nás</span>
-                <h2>Autoškola s tradicí<br>a osobním přístupem</h2>
-                <p class="section-desc">Poskytujeme komplexní výuku a výcvik pro získání řidičského oprávnění. Kombinujeme teoretickou přípravu s praktickým výcvikem pod vedením zkušených instruktorů.</p>
+        <div class="kontakt__grid">
+          <div class="kontakt__info-col">
+            <dl class="contact-list">
+              <div class="contact-list__item">
+                <dt class="contact-list__term">
+                  <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Telefon:</span>
+                </dt>
+                <dd class="contact-list__desc">
+                  <a href="tel:+420604305733" class="contact-link">604 305 733</a>
+                </dd>
+              </div>
+
+              <div class="contact-list__item">
+                <dt class="contact-list__term">
+                  <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                  <span>E-mail:</span>
+                </dt>
+                <dd class="contact-list__desc">
+                  <a href="mailto:autoskolarymarov@gmail.com" class="contact-link">autoskolarymarov@gmail.com</a>
+                </dd>
+              </div>
+
+              <div class="contact-list__item">
+                <dt class="contact-list__term">
+                  <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>Učebna:</span>
+                </dt>
+                <dd class="contact-list__desc">Areál ČSAD Rýmařov, Žižkova 620/21, 795 01 Rýmařov</dd>
+              </div>
+
+              <div class="contact-list__item">
+                <dt class="contact-list__term">
+                  <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span>Výuka teorie:</span>
+                </dt>
+                <dd class="contact-list__desc">Každý lichý čtvrtek od 15:30, nebo dle telefonické domluvy</dd>
+              </div>
+
+              <div class="contact-list__item">
+                <dt class="contact-list__term">
+                  <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <path d="M7 7h10"/>
+                    <path d="M7 12h10"/>
+                    <path d="M7 17h6"/>
+                  </svg>
+                  <span>IČ:</span>
+                </dt>
+                <dd class="contact-list__desc">75408694</dd>
+              </div>
+            </dl>
+
+            <div class="kontakt__map-wrap">
+              <iframe
+                src="https://www.google.com/maps?q=%C5%BDi%C5%BEkova+620%2F21,+795+01+R%C3%BDma%C5%99ov&output=embed"
+                loading="lazy"
+                title="Mapa – učebna autoškoly, Žižkova 620/21, Rýmařov"
+                class="kontakt__map"></iframe>
             </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">📚</div>
-                    <h3>Teoretická výuka</h3>
-                    <p>Výuka pravidel silničního provozu, zásad bezpečné jízdy, ovládání a údržby vozidla a zdravotní přípravy v moderní učebně.</p>
+          </div>
+
+          <div class="kontakt__form-col">
+            <div class="form-card">
+              <h3 class="form-card__title">Přihláška a&nbsp;dotazy</h3>
+              <form id="contactForm" novalidate class="form">
+                <div class="field" id="field-name">
+                  <label for="name" class="field__label">Jméno a&nbsp;příjmení <span class="required" aria-hidden="true">*</span><span class="sr-only"> (povinné)</span></label>
+                  <input type="text" id="name" name="name" class="field__input" autocomplete="name" required aria-required="true">
+                  <div class="field__error" id="name-error" aria-live="polite"></div>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">🚘</div>
-                    <h3>Praktický výcvik</h3>
-                    <p>Jízdy na výukových vozidlech Škoda Fabia Combi 1.9D a Fiat Stilo 1.4 LPG s individuálním přístupem ke každému žákovi.</p>
+
+                <div class="form__row">
+                  <div class="field" id="field-phone">
+                    <label for="phone" class="field__label">Telefon</label>
+                    <input type="tel" id="phone" name="phone" class="field__input" autocomplete="tel">
+                  </div>
+                  <div class="field" id="field-email">
+                    <label for="email" class="field__label">E-mail <span class="required" aria-hidden="true">*</span><span class="sr-only"> (povinné)</span></label>
+                    <input type="email" id="email" name="email" class="field__input" autocomplete="email" required aria-required="true">
+                    <div class="field__error" id="email-error" aria-live="polite"></div>
+                  </div>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">🏥</div>
-                    <h3>Zdravotní příprava</h3>
-                    <p>Kurzy první pomoci vedené kvalifikovaným lektorem Bc. Jindřichem Ptáčníkem jako součást komplexní přípravy.</p>
+
+                <div class="field" id="field-course">
+                  <label for="course" class="field__label">Mám zájem o</label>
+                  <select id="course" name="course" class="field__select">
+                    <option value="">Vyberte…</option>
+                    <option value="B">Řidičský průkaz skupiny B</option>
+                    <option value="prof">Školení profesní způsobilosti</option>
+                    <option value="kondic">Kondiční jízdy</option>
+                    <option value="jine">Něco jiného</option>
+                  </select>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon">🎓</div>
-                    <h3>Profesní školení</h3>
-                    <p>Akreditované školicí středisko profesní způsobilosti řidičů s působností v Bruntále a okolí.</p>
+
+                <div class="field" id="field-message">
+                  <label for="message" class="field__label">Zpráva</label>
+                  <textarea id="message" name="message" rows="4" class="field__textarea"></textarea>
                 </div>
+
+                <button type="submit" class="btn btn--blue btn--full form__submit">Odeslat přes e-mail</button>
+                <p class="form__note">Tlačítko otevře váš e-mailový program s&nbsp;předvyplněnou zprávou. Nejrychlejší je zavolat: <a href="tel:+420604305733" class="form__note-tel">604 305 733</a>.</p>
+                <div class="form__status" id="formStatus" role="status" hidden></div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Services Section -->
-    <section class="section section-alt" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Služby</span>
-                <h2>Co vám nabízíme</h2>
-            </div>
-            <div class="services-grid services-grid-3">
-                <div class="service-card service-featured">
-                    <div class="service-badge">Hlavní kurz</div>
-                    <div class="service-icon">🅱️</div>
-                    <h3>Skupina B</h3>
-                    <p>Řidičské oprávnění pro osobní automobily do 3,5 t. Kompletní teoretická i praktická příprava včetně zdravotní přípravy.</p>
-                    <ul class="service-features">
-                        <li>Teoretická výuka</li>
-                        <li>Praktické jízdy</li>
-                        <li>Zdravotní příprava (první pomoc)</li>
-                        <li>Výukové materiály v ceně</li>
-                        <li>Možnost splátek</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Mám zájem</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3>Školení řidičů</h3>
-                    <p>Akreditované školicí středisko profesní způsobilosti řidičů – vstupní i pravidelná školení.</p>
-                    <a href="#contact" class="btn btn-outline">Více info</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>Kondiční jízdy</h3>
-                    <p>Obnovovací jízdy pro řidiče skupiny B, kteří chtějí získat zpět jistotu za volantem.</p>
-                    <a href="#contact" class="btn btn-outline">Více info</a>
-                </div>
-            </div>
-            <div class="services-extras">
-                <div class="extra">
-                    <span class="extra-icon">🎁</span>
-                    <span>Dárkové poukazy</span>
-                </div>
-                <div class="extra">
-                    <span class="extra-icon">💳</span>
-                    <span>Možnost splátek</span>
-                </div>
-                <div class="extra">
-                    <span class="extra-icon">💿</span>
-                    <span>Výukové CD zdarma</span>
-                </div>
-                <div class="extra">
-                    <span class="extra-icon">📖</span>
-                    <span>Učebnice za zvýhodněné ceny</span>
-                </div>
-            </div>
+  <!-- 10. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a href="#uvod" class="site-logo site-logo--inverted">
+            <span class="site-logo__plate">AUTOŠKOLA</span>
+            <span class="site-logo__text">
+              <span class="site-logo__name">Ladislav Mikuš</span>
+              <span class="site-logo__city">Rýmařov</span>
+            </span>
+          </a>
+          <p class="site-footer__desc">Autoškola Ladislav Mikuš – výuka řízení v&nbsp;Rýmařově a&nbsp;okolí.</p>
         </div>
-    </section>
 
-    <!-- Instructors Section -->
-    <section class="section" id="instructors">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Tým</span>
-                <h2>Váš instruktor</h2>
-                <p class="section-desc">Individuální přístup a osobní vedení výuky skupiny B i školení profesní způsobilosti řidičů.</p>
-            </div>
-            <div class="instructors-grid instructors-grid-single">
-                <div class="instructor-card">
-                    <div class="instructor-avatar">LM</div>
-                    <h3>Ladislav Mikuš</h3>
-                    <p class="instructor-role">Vedoucí instruktor – teorie i praxe</p>
-                    <div class="instructor-categories">
-                        <span class="cat-badge">B</span>
-                        <span class="cat-badge">Školení řidičů</span>
-                    </div>
-                </div>
-            </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Stránka</h3>
+          <ul class="site-footer__links">
+            <li><a href="#kurzy">Kurzy</a></li>
+            <li><a href="#postup">Jak to probíhá</a></li>
+            <li><a href="#instruktor">Instruktor</a></li>
+            <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Pricing Section -->
-    <section class="section section-alt" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Ceník</span>
-                <h2>Výhodné ceny kurzů</h2>
-                <p class="section-desc">Nabízíme konkurenceschopné ceny a možnost splátkového kalendáře. Pro aktuální ceník nás kontaktujte.</p>
-            </div>
-            <div class="pricing-cta">
-                <div class="pricing-card">
-                    <h3>Zajímá vás cena kurzu?</h3>
-                    <p>Ceny se liší podle typu kurzu a rozsahu výcviku. Rádi vám připravíme individuální nabídku.</p>
-                    <div class="pricing-benefits">
-                        <div class="benefit">
-                            <span class="benefit-check">✓</span>
-                            <span>Možnost splátkového kalendáře</span>
-                        </div>
-                        <div class="benefit">
-                            <span class="benefit-check">✓</span>
-                            <span>Výukové materiály v ceně</span>
-                        </div>
-                        <div class="benefit">
-                            <span class="benefit-check">✓</span>
-                            <span>Výukové CD zdarma</span>
-                        </div>
-                        <div class="benefit">
-                            <span class="benefit-check">✓</span>
-                            <span>Dárkové poukazy k dispozici</span>
-                        </div>
-                    </div>
-                    <a href="tel:+420604305733" class="btn btn-primary btn-lg phone-btn">
-                        <span class="phone-label">Zavolejte nám</span>
-                        <span class="phone-number">604 305 733</span>
-                    </a>
-                </div>
-            </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Kurzy</h3>
+          <ul class="site-footer__links">
+            <li><a href="#kurzy">Řidičský průkaz skupiny B</a></li>
+            <li><a href="#kurzy">Školení profesní způsobilosti</a></li>
+            <li><a href="#kurzy">Kondiční jízdy</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- News Section -->
-    <section class="section" id="news">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Aktuality</span>
-                <h2>Novinky a oznámení</h2>
-            </div>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="news-date">
-                        <span class="news-day">15</span>
-                        <span class="news-month">Srp 2019</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Výuka teorie pravidel silničního provozu</h3>
-                        <p>Výuka se koná od 15:30 v učebně areálu ČSAD Rýmařov.</p>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-date">
-                        <span class="news-day">—</span>
-                        <span class="news-month">Oznámení</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Akreditované školicí středisko</h3>
-                        <p>Autoškola nově provozuje akreditované školicí středisko profesní způsobilosti řidičů s působností v Bruntále.</p>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-date">
-                        <span class="news-day">—</span>
-                        <span class="news-month">Info</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Nová adresa učebny</h3>
-                        <p>Učebna na adrese Žižkova 21, 795 01 Rýmařov.</p>
-                    </div>
-                </article>
-            </div>
+        <div class="site-footer__col">
+          <h3 class="site-footer__col-title">Kontakt</h3>
+          <ul class="site-footer__links">
+            <li><a href="tel:+420604305733">604 305 733</a></li>
+            <li><a href="mailto:autoskolarymarov@gmail.com">autoskolarymarov@gmail.com</a></li>
+            <li><span class="site-footer__text-item">IČ: 75408694</span></li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section class="section section-alt" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Kontakt</span>
-                <h2>Ozvěte se nám</h2>
-                <p class="section-desc">Máte zájem o kurz nebo chcete více informací? Neváhejte nás kontaktovat.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Adresa</h4>
-                            <p>Žižkova 21<br>795 01 Rýmařov</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Telefon</h4>
-                            <p><a href="tel:+420604305733">604 305 733</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p><a href="mailto:autoskolarymarov@gmail.com">autoskolarymarov@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">🕐</div>
-                        <div>
-                            <h4>Výuka teorie</h4>
-                            <p>Každý lichý čtvrtek<br>nebo dle telefonické domluvy</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">🆔</div>
-                        <div>
-                            <h4>IČ</h4>
-                            <p>75408694</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Napište nám</h3>
-                        <div class="form-group">
-                            <label for="name">Jméno a příjmení</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Mám zájem o</label>
-                            <select id="course" name="course">
-                                <option value="">Vyberte kurz...</option>
-                                <option value="B">Skupina B – osobní automobil</option>
-                                <option value="A">Skupina A – motocykl</option>
-                                <option value="C">Skupina C, CE – nákladní</option>
-                                <option value="D">Skupina D, DE – autobus</option>
-                                <option value="prof">Profesní způsobilost</option>
-                                <option value="kondic">Kondiční jízdy</option>
-                                <option value="other">Jiné</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Zpráva</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-full">Odeslat zprávu</button>
-                        <p class="form-note">Nebo nám rovnou zavolejte na <a href="tel:+420604305733">604 305 733</a></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© 2026 Autoškola Ladislav Mikuš</p>
+        <p class="site-footer__credit">Web: Filip Adámek</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <iframe
-            src="https://www.google.com/maps?q=Žižkova+21,+795+01+Rýmařov&output=embed"
-            width="100%"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mapa – Autoškola Ladislav Mikuš, Žižkova 21, Rýmařov">
-        </iframe>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v7"/><path d="M12 15v7"/><path d="M2 12h7"/><path d="M15 12h7"/></svg>
-                        <span class="logo-text">AUTOŠKOLA <small>LADISLAV MIKUŠ</small></span>
-                    </a>
-                    <p>Profesionální výuka řízení v Rýmařově a okolí. Vaše cesta k řidičskému průkazu.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigace</h4>
-                    <ul>
-                        <li><a href="#about">O nás</a></li>
-                        <li><a href="#services">Služby</a></li>
-                        <li><a href="#instructors">Instruktoři</a></li>
-                        <li><a href="#pricing">Ceník</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Kurzy</h4>
-                    <ul>
-                        <li><a href="#services">Skupina B</a></li>
-                        <li><a href="#services">Školení řidičů</a></li>
-                        <li><a href="#services">Kondiční jízdy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Kontakt</h4>
-                    <p><a href="tel:+420604305733">604 305 733</a></p>
-                    <p><a href="mailto:autoskolarymarov@gmail.com">autoskolarymarov@gmail.com</a></p>
-                    <p>IČ: 75408694</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Autoškola Ladislav Mikuš – Rýmařov. Všechna práva vyhrazena.</p>
-                <p class="footer-credit">Webdesign: <a href="#" rel="author">Filip Adámek</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- 11. Callbar (mobile <768 only) -->
+  <div class="callbar" id="callbar" aria-label="Rychlý kontakt">
+    <a href="tel:+420604305733" class="btn btn--primary callbar__btn">
+      <svg class="icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      <span>Zavolat</span>
+    </a>
+    <a href="#kontakt" class="btn btn--secondary callbar__btn">
+      <svg class="icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      <span>Napsat</span>
+    </a>
+  </div>
 </body>
 </html>
